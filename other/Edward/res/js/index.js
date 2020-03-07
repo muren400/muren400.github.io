@@ -25,7 +25,7 @@ function init() {
             form.submit();
         }
 
-        form.action = "/" + window.location.pathname;
+        form.action = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname
     }
 
     let search = getUrlParam("search");
