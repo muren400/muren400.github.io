@@ -24,6 +24,8 @@ function init() {
         inputGo.onclick = function () {
             form.submit();
         }
+
+        form.action = "/" + window.location.pathname;
     }
 
     let search = getUrlParam("search");
