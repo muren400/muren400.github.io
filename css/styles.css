@@ -1,14 +1,23 @@
 body {
-    font-family: Helvetica;
-    background-color: lightpink;
+    font-family: Helvetica, Arial, sans-serif;
+    background: url("../res/modular.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     color: azure;
     padding: 0;
     margin: 0;
+    text-align: right;
+}
+
+header {
+    background-color: springgreen;
 }
 
 h1 {
-    font-size: 4em;
-    margin: 10px 0px;
+    font-size: 70px;
+    margin: 0px 0px;
 }
 
 h2 {
@@ -17,7 +26,7 @@ h2 {
 
 ul {
     list-style: none;
-    padding: 10px;
+    padding: 5px;
 }
 
 ul span {
@@ -32,13 +41,18 @@ li a {
 }
 
 li ul li a {
+    text-decoration: none;
     font-size: 1em;
+}
+
+li a:hover {
+    background-color: rgba(23, 83, 146, 0.5);
 }
 
 footer {
     position: fixed;
     bottom: 0;
-    background-color: gray;
+    background-color: rgba(150,150,150,.5);
 }
 
 footer a {
@@ -51,6 +65,15 @@ footer a {
     padding: 5px 20px 5px 20px;
 }
 
+.logo {
+    float: left;
+    height: 80px;
+    filter: invert(100%);
+    cursor: pointer;
+}
+
 #projects {
-    background-color: cadetblue;
+    background: linear-gradient(90deg, rgba(2,0,36,0) -1%, rgba(150,150,150,.5) 30%,  rgba(150,150,150,1) 100%)
+    /* background: linear-gradient(90deg, rgba(2,0,36,0) 30%, rgba(150,150,150,1) 80%,  rgba(150,150,150,1) 100%) */
+    /* background-color: slategray; */
 }
